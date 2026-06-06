@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kritik Sapkota | Developer Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background: #0a0f1c;
+color:white;
+}
+
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(10,15,28,0.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+color:#00d4ff;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00d4ff;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background: radial-gradient(circle at top, #1b2a4a, #0a0f1c);
+}
+
+.hero h1{
+font-size:60px;
+animation:fadeIn 1.5s ease;
+}
+
+.hero h2{
+color:#00d4ff;
+margin-top:10px;
+}
+
+.hero p{
+max-width:600px;
+margin-top:15px;
+opacity:0.8;
+line-height:1.5;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 25px;
+background:#00d4ff;
+border:none;
+color:black;
+font-weight:bold;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00d4ff;
+}
+
+/* SECTION */
+section{
+padding:80px 60px;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#00d4ff;
+}
+
+/* SKILLS */
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+padding:10px 18px;
+background:#111a2e;
+border:1px solid #1f2d4a;
+border-radius:20px;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#00d4ff;
+color:black;
+}
+
+/* PROJECTS */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111a2e;
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+border:1px solid #1f2d4a;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,212,255,0.2);
+}
+
+.card h3{
+color:#00d4ff;
+}
+
+/* CONTACT */
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+input,textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+background:#111a2e;
+color:white;
+outline:none;
+border:1px solid #1f2d4a;
+}
+
+textarea{
+resize:none;
+}
+
+button{
+padding:12px;
+background:#00d4ff;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#0b1220;
+margin-top:40px;
+opacity:0.7;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(-20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav{padding:15px;}
+.hero h1{font-size:38px;}
+section{padding:60px 20px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Kritik.dev</h2>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h1>Kritik Sapkota</h1>
+<h2>Full Stack Web Developer</h2>
+<p>I build modern, high-performance, and AI-inspired web applications for businesses, startups, and freelancers worldwide.</p>
+<a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="title">About Me</h2>
+<p style="max-width:700px;margin:auto;text-align:center;opacity:0.8;">
+I am a passionate developer from Nepal focused on building modern websites, web apps, and AI-integrated systems. I specialize in clean UI, fast performance, and real-world solutions that help businesses grow online.
+</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="title">Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">Python</div>
+<div class="skill">MySQL</div>
+<div class="skill">GitHub</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="title">Projects</h2>
+<div class="projects">
+
+<div class="card">
+<h3>Weather App</h3>
+<p>Real-time API-based weather tracker.</p>
+</div>
+
+<div class="card">
+<h3>AI Chatbot</h3>
+<p>Smart AI assistant with modern UI.</p>
+</div>
+
+<div class="card">
+<h3>E-Commerce UI</h3>
+<p>Fully responsive shopping platform design.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern developer portfolio template.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="title">Contact Me</h2>
+
+<form action="https://formspree.io/f/mbdedalg" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Kritik Sapkota | Built with passion 🚀
+</footer>
+
+</body>
+</html>
